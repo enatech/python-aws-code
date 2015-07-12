@@ -24,6 +24,8 @@ print "Total: " , length , "reservations\n"
 for reservation in reservations:
 	instance = reservation.instances
 	print "Instance Id", instance
-	print "Instance Type", instance.placement
-	print "\n"
+	for instance_details in instance:
+		print "Instance Type", instance_details.instance_type
+		print "Instance Placement", instance_details.placement
+		print "\n"
 
