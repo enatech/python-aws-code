@@ -8,3 +8,6 @@ python s3-multipartload.py
 
 Connect to EC2 instance and list all instances
 python ec2.py
+
+Create a ELB, add EC2 instance to the ELB after configuring HealthCheck
+python elb.py
